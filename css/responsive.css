@@ -34,7 +34,7 @@
 /*Between Grid xl*/
 @media (min-width: 1200px) and (max-width: 1399px) {
   .theme-menu-four,.theme-menu-one {padding-left: 20px; padding-right: 20px;}
-  .theme-menu-four .navbar {margin-left: 40px;}
+  .theme-menu-four .navbar {margin-left: 106px;}
   .hero-banner-five .illustration-holder:before {width: 870px; height: 870px;}
   .hero-banner-one .hero-heading {font-size: 72px;}
   .hero-banner-five .hero-heading {font-size: 75px;}
