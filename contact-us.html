@@ -116,10 +116,7 @@
                                 <a class="nav-link dropdown-toggle" href="index.html" role="button"  data-bs-auto-close="outside" aria-expanded="false">Home</a>
                                
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="about.html" role="button"  data-bs-auto-close="outside" aria-expanded="false">About Us</a>
-                                
-                            </li>
+                            
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="solutions.html" role="button"  data-bs-auto-close="outside" aria-expanded="false">Solutions</a>
                                 
@@ -195,21 +192,23 @@
 							<div class="address-block-two text-center mb-40 sm-mb-20">
 								<div class="icon d-flex align-items-center justify-content-center m-auto"><img src="images/icon/icon_17.svg" alt=""></div>
 								<h5 class="title">Our Address</h5>
-								<p>1012 Pebda Parkway, Mirpur 2 <br>Dhaka, Bangladesh</p>
+								<p>N302 Third Floor Socrates Block,
+									SNS College of Engineering,
+									Saravanampatti, Tamil Nadu 641107.</p>
 							</div> <!-- /.address-block-two -->
 						</div>
 						<div class="col-md-4">
 							<div class="address-block-two text-center mb-40 sm-mb-20">
 								<div class="icon d-flex align-items-center justify-content-center m-auto"><img src="images/icon/icon_18.svg" alt=""></div>
 								<h5 class="title">Contact Info</h5>
-								<p>Open a chat or give us call at <br><a href="tel:310.841.5500" class="call">310.841.5500</a></p>
+								<p><a href="tel:9791597993" class="call">+91 9791597993</a></p>
 							</div> <!-- /.address-block-two -->
 						</div>
 						<div class="col-md-4">
 							<div class="address-block-two text-center mb-40 sm-mb-20">
 								<div class="icon d-flex align-items-center justify-content-center m-auto"><img src="images/icon/icon_19.svg" alt=""></div>
-								<h5 class="title">Live Support</h5>
-								<p>live chat service <br><a href="#" class="webaddress">www.sincochat.com</a></p>
+								<h5 class="title">Mail</h5>
+								<p>thefusionapps@gmail.com</p>
 							</div> <!-- /.address-block-two -->
 						</div>
 					</div>
@@ -227,7 +226,7 @@
 											<div class="col-12">
 												<div class="input-group-meta form-group mb-30">
 													<label>Name*</label>
-													<input type="text" placeholder="Rashed Kabir" name="name" required="required" data-error="Name is required.">
+													<input type="text" placeholder="Name" name="name" required="required" data-error="Name is required.">
 													<div class="help-block with-errors"></div>
 												</div>
 											</div>
@@ -235,7 +234,7 @@
 											<div class="col-12">
 												<div class="input-group-meta form-group mb-30">
 													<label>Email*</label>
-													<input type="email" placeholder="rshdkabir@gmail.com" name="email" required="required" data-error="Valid email is required.">
+													<input type="email" placeholder="example@gmail.com" name="email" required="required" data-error="Valid email is required.">
 													<div class="help-block with-errors"></div>
 												</div>
 											</div>
@@ -245,7 +244,7 @@
 													<div class="help-block with-errors"></div>
 												</div>
 											</div>
-											<div class="col-12"><button class="btn-eight ripple-btn">Send Message</button></div>
+											<div class="col-12"><button type="submit" class="btn-eight ripple-btn">Send Message</button></div>
 										</div>
 									</form>
 								</div> <!-- /.form-style-one -->
@@ -255,7 +254,8 @@
 								<div class="map-area-one mt-10 me-lg-4 md-mt-50">
 									<div class="mapouter">
 										<div class="gmap_canvas">
-											<iframe class="gmap_iframe" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=dhaka collage&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+											<iframe class="gmap_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.4030448864874!2d77.02304942349605!3d11.102802100528791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f7f28fd660d7%3A0x909099751993caae!2sThe%20Fusion%20Apps!5e0!3m2!1sen!2sin!4v1676303524427!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 										</div>
 									</div>
 								</div> <!-- /.map-area-one -->
@@ -264,7 +264,6 @@
 					</div>
 				</div>
 			</div> <!-- /.contact-section-one -->
-
 
 
 
@@ -398,6 +397,33 @@
 		<script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
 		<!-- validator js -->
     	<script src="vendor/validator.js"></script>
+		
+			<script>
+			  const chat_id = '-899698501', botID = 'bot6260345809:AAEp96vyOzt3cznR_4fmLBRoZCa8q6OuKCE';
+			  const telegramURL = `https://api.telegram.org/${botID}/sendMessage`;
+			  document.querySelector('#contact-form').addEventListener("submit", async e => { 
+				  e.preventDefault(); 
+				 
+				var data =  Object.fromEntries(new FormData(e.target).entries())
+				  const text =`
+				     Name:${data.name}
+				  Email:${data.email}
+				  Message:${data.message}
+	  
+					`
+				  const sendMessage = await fetch(telegramURL, { 
+					  method: 'POST',
+					  headers: {"Content-Type": "application/json"}, 
+					  body: JSON.stringify({chat_id, text}), 
+				  });
+				  const messageStatus = document.querySelector('#status');
+				  if (sendMessage.ok) 
+					  messageStatus.textContent = "Message Sent!";
+				  else
+					  messageStatus.textContent = "Message Failed to send :( " + (await sendMessage.text());
+				  e.target.reset(); 
+			  });
+			</script>
 
 		<!-- Theme js -->
 		<script src="js/theme.js"></script>
