@@ -28,7 +28,12 @@
 		<!-- responsive style sheet -->
 		<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
 
-		
+		<!-- Fix Internet Explorer ______________________________________-->
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->	
 	
 	</head>
 	
@@ -71,7 +76,19 @@
     </section>
 
 
-   
+    <!-- 
+    =============================================
+        Search
+    ============================================== 
+    -->
+    <!-- <div class="offcanvas offcanvas-top theme-search-form bg-three justify-content-center" tabindex="-1" id="offcanvasTop">
+        <button type="button" class="close-btn tran3s" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+        <div class="form-wrapper">
+            <form action="#">
+                <input type="text" placeholder="Search Keyword....">
+            </form>
+        </div> 
+    </div> -->
 
 
     <!-- 
@@ -99,8 +116,8 @@
                                 <a class="nav-link dropdown-toggle" href="index.html" role="button"  data-bs-auto-close="outside" aria-expanded="false">Home</a>
                                
                             </li>
-                           
-                            <li class="nav-item dropdown">
+                            
+                            <li class="nav-item active dropdown">
                                 <a class="nav-link dropdown-toggle" href="solutions.html" role="button"  data-bs-auto-close="outside" aria-expanded="false">Solutions</a>
                                 <ul class="dropdown-menu">
 									<li><a href="Facial-recognition-system.html" class="dropdown-item"><span>Facial recognition system</span></a></li>
@@ -109,9 +126,9 @@
 									<li><a href="Automatic-Number-Plate-Recognition.html" class="dropdown-item"><span>Fusion ANPR</span></a></li>
 								</ul>
                             </li>
-							<li class="nav-item active dropdown">
+							<li class="nav-item  dropdown">
                                 <a class="nav-link dropdown-toggle" href="products.html" role="button"  data-bs-auto-close="outside" aria-expanded="false">Products</a>
-								<ul class="dropdown-menu">
+                                <ul class="dropdown-menu">
 									<li><a href="Customer-Relationship-Management.html" class="dropdown-item"><span>Customer Relationship Management (CRM)</span></a></li>
 									<li><a href="Enterprise-Resource-Planning.html" class="dropdown-item"><span>Enterprise Resource Planning (ERP)</span></a></li>
 									<li><a href="Human-Resource-Management.html" class="dropdown-item"><span>Human Resource Management (HRM)</span></a></li>
@@ -130,11 +147,7 @@
 
 								</ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="stories.html" role="button">Stories</a>
-                            </li><li class="nav-item">
-                                <a class="nav-link" href="contact-us.html" role="button">Contact</a>
-                            </li>
+                            es
                         </ul>
                         <!-- Mobile Content -->
                         <div class="mobile-content d-block d-lg-none">
@@ -159,10 +172,10 @@
 			-->
 			<div class="theme-inner-banner">
 				<div class="container">
-					<h2 class="intro-title text-center">Human Resource Management (HRM)</h2>
+					<h2 class="intro-title text-center">Our Stories</h2>
 					<ul class="page-breadcrumb style-none d-flex justify-content-center">
 						<li><a href="index.html">Home</a></li>
-						<li class="current-page">Products</li>
+						<li class="current-page">Stories</li>
 					</ul>
 				</div>
 				<img src="images/shape/shape_38.svg" alt="" class="shapes shape-one">
@@ -172,78 +185,9 @@
 
 
 
-			<!--
-			=====================================================
-				Portfolio Details One
-			=====================================================
-			-->
-			<div class="pr-details-one mt-120 lg-mt-90 mb-170 lg-mb-100">
-				<div class="container">
-					<div class="wrapper ps-xxl-4 pe-xxl-4 ms-xxl-5 me-xxl-5">
-						<div class="row gx-xxl-5">
-							<div class="col-lg-12">
-								<div class="title-style-five">
-									<h2 class="main-title">Human Resource Management (HRM)</h2>
-								</div>
-								<div class="text-wrapper pt-30 md-pt-20">
-									<p>
-										Human Resource Management (HRM) is the process of managing human resources, which are the people who make up an organization's workforce. The goal of HRM is to effectively and efficiently manage employees in order to achieve organizational objectives. <br>
-										
-										HRM involves a range of activities, including recruitment and selection, training and development, performance management, compensation and benefits, and employee relations. These activities are aimed at creating a positive work environment, maintaining good relationships with employees, and improving organizational performance.</p>
-								</div>
-							</div>
-							
-						</div>
-						<div class="portfolio-block-two mt-40 mb-80 lg-mt-20 lg-mb-40">
-							<div class="img-meta">
-								<img src="images/pic/HRMS.png" alt="" class="w-100">
-								<div class=" tran3s"><a class="fancybox tran3s"  href="images/gallery/img_21.jpg" tabindex="0"></i></a></div>
-							</div>
-						</div> <!-- /.portfolio-block-two -->
-						<div class="text-wrapper pt-30 md-pt-20">
-							<p>Effective HRM practices can help organizations to attract and retain talented employees, improve employee engagement and productivity, and create a positive workplace culture. HRM is also important for ensuring compliance with labor laws and regulations, and for managing legal and ethical issues related to employment.
 
-								</div>
-						
-						<div class="mt-80 pt-80 pb-40 mb-60 lg-mt-50 lg-pt-50 lg-pb-20 lg-mb-40 border-top border-bottom">
-							<div class="row gx-xxl-12">
-								
-								<div class="col-xl-12 col-lg-12 ms-auto">
-									<h3 class="sub-title">The functions of HRM can be divided into the following categories:
-
-									</h3>
-									<ul class="style-none list-item">
-										<li>Recruitment and selection: HRM is responsible for identifying the staffing requirements of an organization and attracting suitable candidates to fill those positions. This involves creating job descriptions, advertising job vacancies, screening and interviewing applicants, and ultimately selecting the best candidates for the job.
-
-										</li>
-										<li>Training and development: Once employees are hired, HRM is responsible for ensuring that they receive the necessary training and development to perform their jobs effectively. This may include orientation programs for new employees, on-the-job training, and ongoing professional development opportunities.
-
-										</li>
-										<li>Performance management: HRM is responsible for setting performance standards, monitoring employee performance, and providing feedback to employees. This includes conducting performance evaluations, identifying areas for improvement, and providing coaching and support to employees.
-
-										</li>
-										<li>Compensation and benefits: HRM is responsible for designing and implementing compensation and benefits packages that are competitive with other organizations in the industry. This includes determining salaries, bonuses, and other forms of compensation, as well as managing employee benefits such as health insurance and retirement plans.
-
-										</li>
-										<li>Employee relations: HRM is responsible for maintaining positive relationships between employees and the organization. This involves addressing employee concerns and grievances, managing conflicts, and creating a positive work environment.
-
-
-
-										</li>
-										
-									</ul>
-								</div>
-							</div>
-							<a href="contact.html" class="btn-eight mt-50 lg-mt-30 center" style="left: 500px;">Get a Demo</a>
-
-						</div>
-						
-					</div> <!-- /.wrapper -->
-				</div>
-			</div> <!-- /.pr-details-one -->
-
-
-
+            <div class='sk-ww-medium-publication-feed' data-embed-id='207217'></div>
+            <script src='https://widgets.sociablekit.com/medium-publication-feed/widget.js' async defer></script>
 
 
 <!--
