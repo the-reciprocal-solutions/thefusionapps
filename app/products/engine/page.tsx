@@ -7,11 +7,6 @@ import Footer from "@/components/footer"
 import DemoSection from "@/components/demo-section"
 import { useState } from "react"
 import { FaqSection } from "./components/FaqSection"
-import { Metadata } from "next"
-
-// const metadata: Metadata = {
-//   title: 'Fusion Engine | Smart edge computing system'
-// }
 
 const solutions = {
   analytics: {
