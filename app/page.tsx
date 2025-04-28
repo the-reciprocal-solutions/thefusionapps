@@ -204,9 +204,11 @@ export default function Home() {
             </video>
 
             {/* Overlay image */}
-            <img
+            <Image
               src="/img/videoOverlay.png"
               alt="Overlay"
+              width={100}
+              height={100}
               className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none"
             />
           </div>
