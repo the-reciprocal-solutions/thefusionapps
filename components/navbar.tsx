@@ -50,8 +50,8 @@ export default function Navbar({ activePage }: { activePage?: string }) {
     <nav className="bg-white sticky top-0 z-50 border-b">
       <div className="flex justify-between items-center px-4 py-4">
         <div className="flex items-center">
-        <Link href="/">
-          <Image src="/img/headerlogo2.png" alt="Fusion Apps Logo" width={150} height={40}/>
+          <Link href="/">
+            <Image src="/img/headerlogo2.png" alt="Fusion Apps Logo" width={150} height={40} />
           </Link>
         </div>
 
@@ -154,7 +154,7 @@ export default function Navbar({ activePage }: { activePage?: string }) {
       >
         <div className="flex justify-between items-center p-4 border-b">
           <div>
-            <Image src="/img/headerlogo.svg" alt="Fusion Apps Logo" width={150} height={40} />
+            <Image src="/img/headerlogo2.png" alt="Fusion Apps Logo" width={150} height={40} />
           </div>
           <button
             onClick={toggleSidebar}

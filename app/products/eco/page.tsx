@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
 
-export default function AboutPage() {
+export default function EcoPage() {
     return (
         <main className="flex min-h-screen flex-col bg-white">
             <Navbar activePage="products" />
@@ -166,7 +166,7 @@ export default function AboutPage() {
                 </section>
             </div>
 
-            {/* How It Works view*/}
+            {/* How It Works mobile view*/}
             <div className="block md:hidden mx-4 bg-gray-50 rounded-xl">
                 <section className="container py-10">
                     <h2 className="text-center text-2xl font-semibold text-black">
@@ -187,7 +187,7 @@ export default function AboutPage() {
 
             {/* Smarter Lighting */}
             <div className="mx-2 md:mx-10 px-2 md:px-10 text-black mt-8">
-                <section className="bg-muted py-8 md:py-8">
+                <section className="bg-muted pt-8 md:py-8">
                     <h2 className="text-center text-3xl font-bold">
                         {/* <Lightbulb className="mr-2 inline-block h-8 w-8 text-yellow-500" /> */}
                         Smarter <span className="text-[#00af54] ml-2">Lighting</span>, Smarter <span className="text-[#00af54] ml-2">Business</span>
@@ -244,9 +244,9 @@ export default function AboutPage() {
                             </div>
                         </div>
 
-                        <div className="relative h-400px] overflow-hidden">
+                        <div className="relative h-[400px] overflow-hidden">
                             <Image
-                                src="/img/eco/smartlight.png"
+                                src="/img/eco/smartLight.png"
                                 alt="Smart Lighting Solutions"
                                 width={600}
                                 height={600}
@@ -258,7 +258,7 @@ export default function AboutPage() {
             </div>
 
             {/* Product Line-up */}
-            <div className="mx-2 md:mx-10 px-2 md:px-10 text-black bg-gray-50 rounded-2xl mt-8 md:mt-10">
+            <div className="mx-2 md:mx-10 px-2 md:px-10 text-black bg-gray-50 rounded-2xl md:mt-10 mt-[-30] ">
                 <section className="bg-muted py-4">
                     <div className="container">
                         <h2 className="text-center text-3xl font-bold">
@@ -269,7 +269,7 @@ export default function AboutPage() {
                         </p>
 
                         <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-4 ">
-                            {["Tube Lights", "Down Lights", "Panel Lights", "Street Lights"].map((product) => (
+                            {["tubeLights", "downLights", "panelLights", "streetLights"].map((product) => (
                                 <div key={product} className="relative h-[250px] overflow-hidden rounded-lg shadow-lg hover:shadow-2xl">
                                     <Image
                                         src={`/img/eco/${product}.png`}
@@ -278,7 +278,13 @@ export default function AboutPage() {
                                         className="object-cover"
                                     />
                                     <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/50 to-transparent p-4">
-                                        <h3 className="text-lg font-semibold text-white">{product}</h3>
+                                        <h3 className="text-lg font-semibold text-white">
+                                            {product === "tubeLights" ? "Tube Lights" :
+                                                product === "downLights" ? "Down Lights" :
+                                                    product === "panelLights" ? "Panel Lights" :
+                                                        product === "streetLights" ? "Street Lights" :
+                                                            ""}
+                                        </h3>
                                     </div>
                                 </div>
                             ))}
