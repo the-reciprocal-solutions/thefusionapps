@@ -36,6 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <title>Fusion Apps | Industry - Advertisement | Data-powered outdoor advertising</title>
         <link rel="icon" type="image/svg+xml" href="/img/Logo svg2.svg" />
         <link rel="alternate icon" type="image/x-icon" href="/img/Logo svg2.svg" />
         <link rel="apple-touch-icon" href="/img/Logo svg2.svg" />
