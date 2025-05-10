@@ -200,9 +200,6 @@ const ourImpactsPage = () => {
               <h3 className="font-bold text-lg mt-4 text-black"> Rabwin Industry</h3>
               <p className="text-gray-600 mt-2 flex-grow">
                 Rabwin Industries Pvt. Ltd. is a precision engineering company based in Coimbatore, India, established in 2000. It specializes in the manufacturing of high-quality components and assemblies for industries such as automotive, aerospace, electrical, heavy engineering, pumps, and valves.</p>
-              {/* <a href="/our-impacts" className="mt-4 py-2 w-{15} h-{15} bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-400 transition duration-200 inline-block text-center">
-                View more
-              </a> */}
               <p className="bg-[#5240c5] text-white px-4 mt-2 max-w-[140px] sm:px-6 py-2 rounded-full inline-block font-medium hover:bg-[#311fa4] transition-colors">
                 <a href="/our-impacts/rabwin" className="text-white hover:underline ml-1.5">View more</a>
               </p>
@@ -221,7 +218,7 @@ const ourImpactsPage = () => {
               </div>
               <h3 className="font-bold text-lg mt-4 text-black">Texvalley Mall</h3>
               <p className="text-gray-600 mt-2 flex-grow">
-                Texvalley, located in Erode, Tamil Nadu, is South India&apos;s largest integrated textile marketplace, spanning over 2 million square feet. Strategically positioned on the Salem-Kochi highway (NH544), it serves as a hub for both B2B and B2C commerce, housing hundreds of retail outlets, a hypermarket, multiplex, food court, and entertainment zones. Texvalley has been instrumental in transforming the regional textile industry by providing a centralized platform for trade and shopping.</p>
+              Texvalley in Erode, Tamil Nadu, is South India's largest integrated textile marketplace with 2 million+ sq. ft. area. Located on NH544, it hosts B2B/B2C outlets, a hypermarket, multiplex, food court, and more—boosting regional textile trade through a centralized commercial hub.</p>
               {/* <a href="/our-impacts/texvalley" className="mt-4 py-2 w-{15} h-{15} bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-400 transition duration-200 inline-block text-center">
                 View more
               </a> */}

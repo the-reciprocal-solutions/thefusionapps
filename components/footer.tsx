@@ -89,10 +89,10 @@ export default function Footer() {
                   <ul className="space-y-2 ">
                     <li><a href="/products/engine" className="text-white/80 hover:text-white transition-all ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Fusion Engine</a>
                       <ul className="space-y-2 ml-5">
-                        <li><a href="/products/attendance" className="text-white/80 hover:text-white transition-all ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">•</span> Fusion Attendance</a></li>
-                        <li><a href="/products/anpr" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">•</span> Fusion ANPR</a></li>
-                        <li><a href="/products/analytics" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">•</span> Fusion Analytics</a></li>
-                        <li><a href="/products/surveillance" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">•</span> Fusion Surveillance</a></li>
+                        <li><a href="/products/attendance" className="text-white/80 hover:text-white transition-all ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Fusion Attendance</a></li>
+                        <li><a href="/products/anpr" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Fusion ANPR</a></li>
+                        <li><a href="/products/analytics" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Fusion Analytics</a></li>
+                        <li><a href="/products/surveillance" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Fusion Surveillance</a></li>
                       </ul>
                     </li>
                     <li><a href="/products/eco" className="text-white/80 hover:text-white transition-all ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Fusion Eco</a></li>
