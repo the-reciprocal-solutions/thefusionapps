@@ -252,7 +252,7 @@ export default function AboutPage() {
                     </p>
 
                     {/* Logo Container */}
-                    <div className="w-full overflow-hidden relative">
+                    <div className="w-full overflow-hidden relative mt-8">
                         <div className="animate-scroll-x flex w-max gap-8 md:gap-12">
                             {/* Repeat logos if needed for seamless loop */}
                             {[...Array(2)].map((_, i) => (

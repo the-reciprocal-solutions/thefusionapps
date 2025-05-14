@@ -6,32 +6,35 @@ import DemoSection from '@/components/demo-section';
 
 const ourImpactsPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
+    <div className="min-h-screen bg-gray-50 ">
       <Navbar activePage="our-impacts" />
       {/* Gap for Navbar */}
       <div className="mb-6" /> {/* Added gap for navbar */}
 
       {/* Banner Container */}
-      <div className="relative w-full h-full py-16 mb-12 rounded-[20px] "
-        style={{
-          backgroundImage: `url("/img/our-impacts/our-impactsBanner.png")`,
-        }}
-      >
+      <div className='flex justify-center'>
+        <div className="relative w-7/8  h-full py-16  mb-12 rounded-[20px] "
+          style={{
+            backgroundImage: `url("/img/our-impacts/our-impactsBanner.png")`,
+          }}
+        >
 
 
-        {/* Content Container */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          {/* Heading */}
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
-            Texvalley Mall, Erode
-          </h1>
+          {/* Content Container */}
+          <div className="relative z-10 max-w-4xl mx-auto text-center">
+            {/* Heading */}
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
+              Texvalley Mall, Erode
+            </h1>
 
-          {/* Description */}
-          <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
-            Strategically positioned on the Salem-Kochi highway (NH544), it serves as a hub for both B2B and B2C commerce, housing hundreds of retail outlets, a hypermarket, multiplex, food court, and entertainment zones.
-          </p>
+            {/* Description */}
+            <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
+              Strategically positioned on the Salem-Kochi highway (NH544), it serves as a hub for both B2B and B2C commerce, housing hundreds of retail outlets, a hypermarket, multiplex, food court, and entertainment zones.
+            </p>
+          </div>
         </div>
       </div>
+
 
       {/* the feature of view more buttons when iclick the button that change the Problem Statement,Solution Offered:, How It Was Implemented: part of image, content, heading will be another one  */}
       {/* Our Products */}
