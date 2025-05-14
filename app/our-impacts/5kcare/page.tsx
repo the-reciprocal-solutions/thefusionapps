@@ -10,32 +10,34 @@ import DemoSection from '@/components/demo-section';
 
 const ourImpactsPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
+    <div className="min-h-screen bg-gray-50">
       <Navbar activePage="our-impacts" />
       {/* Gap for Navbar */}
       <div className="mb-6" /> {/* Added gap for navbar */}
 
       {/* Banner Container */}
-      <div className="relative w-full h-full py-16 mb-12 rounded-[20px] "
-        style={{
-          backgroundImage: `url("/img/our-impacts/our-impactsBanner.png")`,
-        }}
-      >
+      <div className='flex justify-center'>
+        <div className="relative w-7/8  h-full py-16  mb-12 rounded-[20px] "
+          style={{
+            backgroundImage: `url("/img/our-impacts/our-impactsBanner.png")`,
+          }}
+        >
 
 
-        {/* Content Container */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          {/* Heading */}
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
-            5K Care – India&apos;s Fast-Growing Car Care Franchise
-          </h1>
+          {/* Content Container */}
+          <div className="relative z-10 max-w-4xl mx-auto text-center">
+            {/* Heading */}
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
+              5K Care – India&apos;s Fast-Growing Car Care Franchise
+            </h1>
 
-          {/* Description */}
-          <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
-            5K Care is a rapidly growing automotive franchise network in India, with over 200 service outlets,
-            80–90% of which are franchised. With a strong retail presence, their model focuses on delivering
-            standardized vehicle maintenance and car care services across locations.
-          </p>
+            {/* Description */}
+            <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
+              5K Care is a rapidly growing automotive franchise network in India, with over 200 service outlets,
+              80–90% of which are franchised. With a strong retail presence, their model focuses on delivering
+              standardized vehicle maintenance and car care services across locations.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -218,7 +220,7 @@ const ourImpactsPage = () => {
               </div>
               <h3 className="font-bold text-lg mt-4 text-black">Texvalley Mall</h3>
               <p className="text-gray-600 mt-2 flex-grow">
-              Texvalley in Erode, Tamil Nadu, is South India's largest integrated textile marketplace with 2 million+ sq. ft. area. Located on NH544, it hosts B2B/B2C outlets, a hypermarket, multiplex, food court, and more—boosting regional textile trade through a centralized commercial hub.</p>
+                Texvalley in Erode, Tamil Nadu, is South India's largest integrated textile marketplace with 2 million+ sq. ft. area. Located on NH544, it hosts B2B/B2C outlets, a hypermarket, multiplex, food court, and more—boosting regional textile trade through a centralized commercial hub.</p>
               {/* <a href="/our-impacts/texvalley" className="mt-4 py-2 w-{15} h-{15} bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-400 transition duration-200 inline-block text-center">
                 View more
               </a> */}

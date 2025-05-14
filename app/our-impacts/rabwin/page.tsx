@@ -6,30 +6,32 @@ import DemoSection from '@/components/demo-section';
 
 const ourImpactsPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
+    <div className="min-h-screen bg-gray-50">
       <Navbar activePage="our-impacts" />
       {/* Gap for Navbar */}
       <div className="mb-6" /> {/* Added gap for navbar */}
 
       {/* Banner Container */}
-      <div className="relative w-full h-full py-16 mb-12 rounded-[20px] "
-        style={{
-          backgroundImage: `url("/img/our-impacts/our-impactsBanner.png")`,
-        }}
-      >
+      <div className='flex justify-center'>
+        <div className="relative w-7/8  h-full py-16  mb-12 rounded-[20px] "
+          style={{
+            backgroundImage: `url("/img/our-impacts/our-impactsBanner.png")`,
+          }}
+        >
 
 
-        {/* Content Container */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          {/* Heading */}
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
-          Rabwin Industry India Pvt Ltd
-          </h1>
+          {/* Content Container */}
+          <div className="relative z-10 max-w-4xl mx-auto text-center">
+            {/* Heading */}
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
+              Rabwin Industry India Pvt Ltd
+            </h1>
 
-          {/* Description */}
-          <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
-          With a workforce exceeding 5,000 employees and a design repository of over 500,000 unique creations, Rabwin operates four state-of-the-art manufacturing units in Coimbatore, specializing in various techniques.
-          </p>
+            {/* Description */}
+            <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
+              With a workforce exceeding 5,000 employees and a design repository of over 500,000 unique creations, Rabwin operates four state-of-the-art manufacturing units in Coimbatore, specializing in various techniques.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -245,7 +247,7 @@ const ourImpactsPage = () => {
           </div>
 
           <h2 className="text-3xl font-bold text-center text-black mb-10"><span className="text-[#6C5DD3]">Further Case studies</span></h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Card 1 */}
             {/* <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
               <Image src="/img/our-impacts/Frame 8.png" alt="Security Camera 1" width={400} height={300} className="rounded-t-lg object-cover" />

@@ -10,33 +10,36 @@ import DemoSection from '@/components/demo-section';
 
 const ourImpactsPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
+    <div className="min-h-screen bg-gray-50 ">
       <Navbar activePage="our-impacts" />
       {/* Gap for Navbar */}
       <div className="mb-6" /> {/* Added gap for navbar */}
 
       {/* Banner Container */}
-      <div className="relative w-full h-full py-16 mb-12 rounded-[20px] "
-        style={{
-          backgroundImage: `url("/img/our-impacts/our-impactsBanner.png")`,
-        }}
-      >
+      <div className='flex justify-center'>
+        <div className="relative w-7/8  h-full py-16  mb-12 rounded-[20px] "
+          style={{
+            backgroundImage: `url("/img/our-impacts/our-impactsBanner.png")`,
+          }}
+        >
 
 
-        {/* Content Container */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          {/* Heading */}
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
-          Real Stories. Real Results.
-          
-          </h1>
+          {/* Content Container */}
+          <div className="relative z-10 max-w-4xl mx-auto text-center">
+            {/* Heading */}
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
+              Real Stories. Real Results.
 
-          {/* Description */}
-          <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
-          Explore how our solutions have made a measurable impact through in-depth, real-world case studies.
-          </p>
+            </h1>
+
+            {/* Description */}
+            <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
+              Explore how our solutions have made a measurable impact through in-depth, real-world case studies.
+            </p>
+          </div>
         </div>
       </div>
+
 
       {/* the feature of view more buttons when iclick the button that change the Problem Statement,Solution Offered:, How It Was Implemented: part of image, content, heading will be another one  */}
       {/* Our Products */}
@@ -58,7 +61,7 @@ const ourImpactsPage = () => {
             {/* Right Side - Product Details */}
             <div className="relative">
               <h3 className="text-3xl font-bold mb-6 text-black relative z-10">
-              Why Case Studies <span className="text-[#6C5DD3]">Matter</span>
+                Why Case Studies <span className="text-[#6C5DD3]">Matter</span>
               </h3>
 
               {/* Feature List */}
@@ -311,7 +314,7 @@ const ourImpactsPage = () => {
               </p>
             </div>
           </div>
-        </div>  
+        </div>
       </section>
       <DemoSection />
       <Footer />
