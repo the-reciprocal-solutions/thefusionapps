@@ -17,6 +17,19 @@ export default function Navbar({ activePage }: { activePage?: string }) {
   const toggleEngineDropdown = () => setEngineDropdownOpen(!engineDropdownOpen);
   const toggleMobileEngineDropdown = () => setMobileEngineDropdownOpen(!mobileEngineDropdownOpen);
 
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const handleDropdownToggle = (key: string) => {
+    setOpenDropdown((prev) => (prev === key ? null : key));
+  };
+
+  // const handleMouseLeave = (key: string) => {
+  //   if (openDropdown === key) {
+  //     setOpenDropdown(null);
+  //   }
+  // };
+
+
   const isProductActive = activePage === 'products' ||
     activePage === 'engine' ||
     activePage === 'eco' ||
@@ -64,8 +77,14 @@ export default function Navbar({ activePage }: { activePage?: string }) {
         <div className="hidden md:flex flex-1 justify-center gap-12">
           {navItems.map((item) =>
             "dropdown" in item ? (
-              <div key={item.key} className="relative group">
-                <div className="flex items-center cursor-pointer">
+              <div key={item.key} className="relative group"
+                // onMouseLeave={() => handleMouseLeave(item.key)}
+              >
+                <div className="flex items-center cursor-pointer"
+                  onClick={() => {
+                    handleDropdownToggle(item.key)
+                  }}
+                >
                   <span
                     className={`text-[18px] ${(item.key === "products" && isProductActive) ||
                       (item.key === "industries" && isIndustryActive)
@@ -77,7 +96,11 @@ export default function Navbar({ activePage }: { activePage?: string }) {
                   </span>
                   <ChevronDown size={16} className="ml-1" />
                 </div>
-                <div className="absolute left-0 top-5 mt-2 hidden group-hover:block bg-white rounded-xl w-64 py-3 shadow-lg z-50 transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
+                <div
+                  className={`absolute left-0 top-5 mt-2 bg-white rounded-xl w-64 py-3 shadow-lg z-50 transition-all duration-300
+          ${openDropdown === item.key ? "block opacity-100 translate-y-0" : "hidden opacity-0 translate-y-2"}
+          group-hover:block group-hover:opacity-100 group-hover:translate-y-0`}
+                >
                   {item.key === "products" ? (
                     <div className="relative">
                       <div className="flex items-center px-4 py-2 hover:bg-gray-100">
