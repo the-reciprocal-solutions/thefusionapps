@@ -88,7 +88,7 @@ export default function Navbar({ activePage }: { activePage?: string }) {
                   <span
                     className={`text-[18px] ${(item.key === "products" && isProductActive) ||
                       (item.key === "industries" && isIndustryActive)
-                      ? "text-[#F28159] font-semibold"
+                      ? "text-[#F28159] "
                       : "text-[#303030]"
                       }`}
                   >
@@ -104,7 +104,7 @@ export default function Navbar({ activePage }: { activePage?: string }) {
                   {item.key === "products" ? (
                     <div className="relative">
                       <div className="flex items-center px-4 py-2 hover:bg-gray-100">
-                        <Link href="/products/engine" className={`flex-1 text-[14px] ${activePage === "engine" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>
+                        <Link href="/products/engine" className={`flex-1 text-[14px] ${activePage === "engine" ? "text-[#F28159] " : "text-[#303030]"}`}>
                           Fusion Engine
                         </Link>
                         <button
@@ -116,23 +116,23 @@ export default function Navbar({ activePage }: { activePage?: string }) {
                       </div>
                       {engineDropdownOpen && (
                         <div className="ml-4 border-l-2 border-gray-200 pl-2">
-                          <Link href="/products/analytics" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "analytics" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>Fusion Analytics</Link>
-                          <Link href="/products/anpr" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "anpr" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>Fusion ANPR</Link>
-                          <Link href="/products/surveillance" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "surveillance" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>Fusion Surveillance</Link>
-                          <Link href="/products/attendance" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "attendance" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>Fusion Attendance</Link>
+                          <Link href="/products/analytics" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "analytics" ? "text-[#F28159] " : "text-[#303030]"}`}>Fusion Analytics</Link>
+                          <Link href="/products/anpr" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "anpr" ? "text-[#F28159] " : "text-[#303030]"}`}>Fusion ANPR</Link>
+                          <Link href="/products/surveillance" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "surveillance" ? "text-[#F28159] " : "text-[#303030]"}`}>Fusion Surveillance</Link>
+                          <Link href="/products/attendance" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "attendance" ? "text-[#F28159] " : "text-[#303030]"}`}>Fusion Attendance</Link>
                         </div>
                       )}
-                      <Link href="/products/eco" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "eco" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>Fusion Eco</Link>
+                      <Link href="/products/eco" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "eco" ? "text-[#F28159] " : "text-[#303030]"}`}>Fusion Eco</Link>
                     </div>
                   ) : item.key === "industries" ? (
                     <>
-                      <Link href="/industries/retail" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "retail" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>Retail</Link>
-                      <Link href="/industries/hospital" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "hospital" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>Hospitals</Link>
-                      <Link href="/industries/manufacture" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "manufacture" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>Manufacturing</Link>
-                      <Link href="/industries/transport" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "transport" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>Transportation</Link>
-                      <Link href="/industries/advertisement" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "advertisement" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>Advertisement</Link>
-                      <Link href="/industries/bank" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "bank" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>Banking</Link>
-                      <Link href="/industries/mall" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "mall" ? "text-[#F28159] font-medium" : "text-[#303030]"}`}>Mall Analytics</Link>
+                      <Link href="/industries/retail" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "retail" ? "text-[#F28159] " : "text-[#303030]"}`}>Retail</Link>
+                      <Link href="/industries/hospital" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "hospital" ? "text-[#F28159] " : "text-[#303030]"}`}>Hospitals</Link>
+                      <Link href="/industries/manufacture" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "manufacture" ? "text-[#F28159] " : "text-[#303030]"}`}>Manufacturing</Link>
+                      <Link href="/industries/transport" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "transport" ? "text-[#F28159] " : "text-[#303030]"}`}>Transportation</Link>
+                      <Link href="/industries/advertisement" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "advertisement" ? "text-[#F28159] " : "text-[#303030]"}`}>Advertisement</Link>
+                      <Link href="/industries/bank" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "bank" ? "text-[#F28159] " : "text-[#303030]"}`}>Banking</Link>
+                      <Link href="/industries/mall" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "mall" ? "text-[#F28159] " : "text-[#303030]"}`}>Mall Analytics</Link>
                     </>
                   ) : null}
                 </div>
@@ -142,7 +142,7 @@ export default function Navbar({ activePage }: { activePage?: string }) {
                 <div className="flex items-center">
                   <span
                     className={`text-[18px] ${activePage === item.key
-                      ? "text-[#F28159] font-semibold"
+                      ? "text-[#F28159]"
                       : "text-[#303030]"
                       }`}
                   >
@@ -193,7 +193,7 @@ export default function Navbar({ activePage }: { activePage?: string }) {
               className={`py-4 px-6 mb-2 rounded-lg transition-colors duration-200 hover:bg-gray-50 ${activePage === "home" ? "bg-orange-50 text-[#F28159]" : "text-black"
                 }`}
             >
-              <span className="text-lg font-medium">Home</span>
+              <span className="text-lg ">Home</span>
             </div>
           </Link>
 
@@ -203,7 +203,7 @@ export default function Navbar({ activePage }: { activePage?: string }) {
                 }`}
               onClick={toggleMobileProducts}
             >
-              <span className="text-lg font-medium">Products</span>
+              <span className="text-lg ">Products</span>
               {mobileProductsOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
             </div>
 
@@ -262,7 +262,7 @@ export default function Navbar({ activePage }: { activePage?: string }) {
                 }`}
               onClick={toggleMobileIndustry}
             >
-              <span className="text-lg font-medium">Industry</span>
+              <span className="text-lg ">Industry</span>
               {mobileIndustryOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
             </div>
 
@@ -310,18 +310,18 @@ export default function Navbar({ activePage }: { activePage?: string }) {
 
           <Link href="/about">
             <div className={`py-4 px-6 transition-colors duration-200 text-black hover:bg-gray-50 rounded-lg ${activePage === "about" ? "bg-orange-50 text-[#F28159]" : ""}`}>
-              <span className="text-lg font-medium">About Us</span>
+              <span className="text-lg ">About Us</span>
             </div>
           </Link>
 
           <Link href="/contact">
             <div className={`py-4 px-6 transition-colors duration-200 text-black hover:bg-gray-50 rounded-lg ${activePage === "contact" ? "bg-orange-50 text-[#F28159]" : ""}`}>
-              <span className="text-lg font-medium">Contact Us</span>
+              <span className="text-lg ">Contact Us</span>
             </div>
           </Link>
           <Link href="/our-impacts">
             <div className={`py-4 px-6 transition-colors duration-200 text-black hover:bg-gray-50 rounded-lg ${activePage === "our-impacts" ? "bg-orange-50 text-[#F28159]" : ""}`}>
-              <span className="text-lg font-medium">Our Impacts</span>
+              <span className="text-lg ">Our Impacts</span>
             </div>
           </Link>
           <div className="mt-10 px-6">
