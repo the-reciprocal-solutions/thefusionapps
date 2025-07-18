@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import { ChevronRight, ChevronsRight } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 // #212567
 
 export default function Footer() {
@@ -71,7 +71,7 @@ export default function Footer() {
 
             {/* Right Columns - Navigation */}
             <div className="lg:col-span-7 p-1 text-start flex justify-center">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:gap-25"> {/* Added gap for laptop view */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[200px_200px_200px] gap-10 lg:gap-10 lg:ml-36"> {/* Added gap for laptop view */}
                 {/* About Column */}
                 <div className="mb-6 flex flex-col items-start"> {/* Centered content for mobile view */}
                   <h3 className="text-white font-bold mb-4 uppercase tracking-wider flex items-start">Quick Links</h3>
@@ -82,7 +82,7 @@ export default function Footer() {
                     <li><a href="/industries" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1  mt-1 flex-shrink-0" /> Industries</a></li>
                     <li><a href="/policy" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1 mt-1  flex-shrink-0" /> Privacy Policy</a></li>
                     <li><a href="/policy/disclaimerPolicy" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1  mt-1 flex-shrink-0" /> Disclaimer Policy</a></li>
-                    <li><a href="/policy/termsandcondition" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1  mt-1 flex-shrink-0" /> Terms & Conditions</a></li>
+                    <li><a href="/policy/termsandcondition" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1  mt-1 flex-shrink-0" />Terms & Conditions</a></li>
                   </ul>
                 </div>
 
@@ -90,14 +90,11 @@ export default function Footer() {
                 <div className="mb-6 flex flex-col items-start">
                   <h3 className="text-white font-bold mb-4 uppercase tracking-wider text-center">Solutions</h3>
                   <ul className="space-y-2 ">
-                    <li><a href="/products/engine" className="text-white/80 hover:text-white transition-all ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1 mt-1 flex-shrink-0" /> Fusion Engine</a>
-                      <ul className="space-y-2 ml-5 mt-2">
-                        <li><a href="/products/attendance" className="text-white/80 hover:text-white transition-all ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronsRight className="h-4 w-4 mr-1 mt-1  flex-shrink-0" /> Fusion Attendance</a></li>
-                        <li><a href="/products/anpr" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronsRight className="h-4 w-4 mr-1 mt-1  flex-shrink-0" /> Fusion ANPR</a></li>
-                        <li><a href="/products/analytics" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronsRight className="h-4 w-4 mr-1 mt-1  flex-shrink-0" /> Fusion Analytics</a></li>
-                        <li><a href="/products/surveillance" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronsRight className="h-4 w-4 mr-1 mt-1  flex-shrink-0" /> Fusion Surveillance</a></li>
-                      </ul>
-                    </li>
+                    {/* <li><a href="/products/engine" className="text-white/80 hover:text-white transition-all ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1 mt-1 flex-shrink-0" /> Fusion Engine</a></li> */}
+                    <li><a href="/products/attendance" className="text-white/80 hover:text-white transition-all ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1 mt-1  flex-shrink-0" /> Fusion Attendance</a></li>
+                    <li><a href="/products/anpr" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1 mt-1  flex-shrink-0" /> Fusion ANPR</a></li>
+                    <li><a href="/products/analytics" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1 mt-1  flex-shrink-0" /> Fusion Analytics</a></li>
+                    <li><a href="/products/surveillance" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1 mt-1  flex-shrink-0" /> Fusion Surveillance</a></li>
                     <li><a href="/products/eco" className="text-white/80 hover:text-white transition-all ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1 mt-1 flex-shrink-0" /> Fusion Eco</a></li>
                   </ul>
                 </div>
