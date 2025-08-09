@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Fusion Apps | Home | AI-powered business intelligence solutions",
+  title: "The Fusion Apps | AI-powered business intelligence solutions | Video intelligence | Energy Management",
   description: "AI Solutions with Fusion Engine",
   icons: {
     icon: [
@@ -40,7 +40,7 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/img/Logo svg2.svg" />
         <link rel="alternate icon" type="image/x-icon" href="/img/Logo svg2.svg" />
         <link rel="apple-touch-icon" href="/img/Logo svg2.svg" />
-        <meta property="og:title" content="Fusion Apps | Home | AI-powered business intelligence solutions" />
+        <meta property="og:title" content="The Fusion Apps | AI-powered business intelligence solutions | Video intelligence | Energy Management" />
       </head>
       <body className={poppins.className} suppressHydrationWarning>
         {children}
