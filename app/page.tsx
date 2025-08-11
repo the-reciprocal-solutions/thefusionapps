@@ -993,6 +993,39 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="bg-white text-black mt-10">
+          <div className="container mx-auto px-4 md:px-8">
+            {/* Heading */}
+            <h2 className="text-3xl md:text-4xl font-bold text-start ml-[-22] mb-10">
+              Our <span className="text-[#6C5DD3]">Partners</span>
+            </h2>
+
+            {/* Logo Container */}
+            <div className="w-full overflow-hidden relative">
+              <div className="animate-scroll-x flex w-max gap-8 md:gap-12">
+                {/* Repeat logos if needed for seamless loop */}
+                {[...Array(2)].map((_, i) => (
+                  <React.Fragment key={i}>
+                    {[...Array(7)].map((_, j) => (
+                      <div
+                        key={j + i * 10}
+                        className="flex-none border border-gray-300 shadow-md rounded-md p-2"
+                      >
+                        <Image
+                          src={`/img/partners/partner${j + 1}.png`}
+                          alt={`partner-${j + 1}`}
+                          width={140}
+                          height={60}
+                        />
+                      </div>
+                    ))}
+                  </React.Fragment>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Industry Showcase Section */}
         <section className="relative py-6 bg-white">
           <h2 className="text-3xl md:text-4xl font-bold md:mt-10 text-black">
