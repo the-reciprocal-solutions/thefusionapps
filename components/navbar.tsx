@@ -123,6 +123,7 @@ export default function Navbar({ activePage }: { activePage?: string }) {
                         </div>
                       )}
                       <Link href="/products/eco" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "eco" ? "text-[#F28159] " : "text-[#303030]"}`}>Fusion Eco</Link>
+                      <Link href="https://esg.thefusionapps.com/" target="_blank" rel="noopener noreferrer" className={`block px-4 py-2 text-[14px] hover:bg-gray-100 transition-colors duration-200 ${activePage === "esg" ? "text-[#F28159] " : "text-[#303030]"}`}>Fusion ESG</Link>
                     </div>
                   ) : item.key === "industries" ? (
                     <>
