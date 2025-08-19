@@ -207,7 +207,7 @@ export default function ContactPage() {
                 <h3 className="text-lg font-semibold text-black mb-3">Singapore</h3>
                 <p className="text-gray-600 mb-3 text-center">8 Bumit Road, #03-10, Singapore - 329077</p>
                 <div className="flex items-center text-gray-500">
-                  <Phone /> <span className="ml-2">+65 1234 5678</span>
+                  <Phone /> <span className="ml-2">+65 8131 4467</span>
                 </div>
               </div>
             </div>
