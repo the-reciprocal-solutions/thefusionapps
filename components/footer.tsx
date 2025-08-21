@@ -96,6 +96,7 @@ export default function Footer() {
                     <li><a href="/products/analytics" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1 mt-1  flex-shrink-0" /> Fusion Analytics</a></li>
                     <li><a href="/products/surveillance" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1 mt-1  flex-shrink-0" /> Fusion Surveillance</a></li>
                     <li><a href="/products/eco" className="text-white/80 hover:text-white transition-all ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1 mt-1 flex-shrink-0" /> Fusion Eco</a></li>
+                    <li><a href="https://esg.thefusionapps.com/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-all ease-in-out duration-300 flex items-start hover:translate-x-1"><ChevronRight className="h-4 w-4 mr-1 mt-1 flex-shrink-0" /> Fusion ESG</a></li>
                   </ul>
                 </div>
 
