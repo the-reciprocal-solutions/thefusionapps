@@ -244,6 +244,21 @@ const ourImpactsPage = () => {
           </div>
         </div>
       </section>
+      
+      {/* Hidden Stalwart Logo for Build Optimization */}
+      <div className="hidden invisible absolute -z-50 opacity-0 pointer-events-none" style={{ display: 'none' }}>
+        <Image
+          src="/img/cipla-logo.webp"
+          alt="Stalwart Logo"
+          width={256}
+          height={81}
+          priority={false}
+          loading="lazy"
+        />
+      </div>
+
+      
+      
       <DemoSection />
       <Footer />
     </div>
