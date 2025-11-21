@@ -125,7 +125,7 @@ export default function Footer() {
               <span
                 className="text-[#6C5DD3] hover:text-[#5240c5] transition-colors duration-200 font-medium"
               >
-                FusionPro Solutions Private Limited
+                Fusion Apps
               </span>
             </p>
           </div>
